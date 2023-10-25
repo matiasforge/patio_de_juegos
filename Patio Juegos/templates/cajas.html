@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Cajas de Colores</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    {% for _ in range(cajas) %}
+        <div class="caja" style="background-color: {{ color }}"></div>
+    {% endfor %}
+</body>
+</html>
